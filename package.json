@@ -1,0 +1,47 @@
+{
+  "name": "setcon2017",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server.js --exec babel-node -e js --ignore public/",
+    "build": "webpack -wd",
+    "dev-server": "webpack-dev-server"
+  },
+  "keywords": [
+    "setcon2018",
+    "setcon 2018",
+    "setcon-2018",
+    "setcon-brest-2018"
+  ],
+  "author": "Aliaksei Bychyk",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "ejs": "^2.5.7", 
+    "express": "^4.16.3",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.17.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "react-router-config": "^1.0.0-beta.4",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.7.0",
+    "webpack-dev-server": "^3.1.1"
+  }
+}
