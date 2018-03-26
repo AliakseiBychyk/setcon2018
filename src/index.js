@@ -7,6 +7,8 @@ render(
   <Router>
     <Switch>
       <Route exact path="/" component={App} />
+      <Route path="/agenda" component={Agenda} />
+      <Route path="/speakers" component={Speakers} />
     </Switch>
   </Router>,
   document.getElementById('root')
