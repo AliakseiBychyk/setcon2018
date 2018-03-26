@@ -1,0 +1,10 @@
+.burger-button {
+	cursor: pointer;
+    .burger-line {
+        display: block;
+        width: 30px;
+        height: 2px;
+        margin-bottom: 5px;
+        background: $dark-red;
+    }
+}

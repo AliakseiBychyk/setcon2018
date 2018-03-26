@@ -1,0 +1,92 @@
+.main-header {
+    position: relative;
+    height: 50px;
+    top: 0;
+    z-index: $z-index-high;
+    padding: 0 10%;
+
+    @media #{$media-1280} {
+        padding: 0 5%;
+    }
+
+    .main-header__title__logo-link {
+        text-decoration: none;
+    }
+
+    .main-header__wrapper {
+        @include flex-row-space-between;
+        height: 100%;
+
+        .main-header__title {
+            display: inline-block;
+
+            .main-header__title__toggle-button {
+                display: none;
+            }
+        }
+    }
+
+    .menu-list__items {
+        @include flex-row-space-between;
+        .menu-list__item {
+            list-style: none;
+            padding: 5px 20px; //percents didn't work in FF
+            font-size: $font-size-small;
+            color: $rose;
+            cursor: pointer;
+            margin-right: 5px;
+            border-bottom: 2px solid $white;
+
+            &.menu-list__item--active {
+                background: $rose;
+                color: $white;
+                border-bottom: none;
+                
+                &:hover {
+                    border-bottom: none;
+                }
+            }
+
+            &:hover {
+               border-bottom: 2px solid $rose;
+            }
+
+            .menu-list__item__link {
+                display: block;
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+
+    // @media #{$media-780} {
+    //     .main-header__wrapper {
+    //         display: block;
+
+    //         .main-header__title {
+    //             @include flex-row-space-between;
+    //             height: 50px;
+
+    //             .main-header__title__toggle-button {
+    //                 display: inline-block;
+    //             }
+    //         }
+
+    //         .menu-list {
+    //             display: none;
+    //         }
+    //     }
+
+    //     &.menu-list--opened {
+    //         height: 155px;
+
+    //         .menu-list,
+    //         .menu-list__items {
+    //             display: block;
+    //             width: 100%;
+    //             margin: 0;
+    //             padding: 0;
+    //         }
+    //     }
+    // }
+}

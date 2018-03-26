@@ -1,0 +1,16 @@
+.conference-description {
+    padding: 6% 0;
+    
+    .conference-description__text {
+        font-size: $font-size-x-large;
+        color: $black;
+        text-align: center;
+        max-width: 70%;
+        margin: 0 auto;
+
+        @media #{$media-780} {
+            font-size: $font-size-medium;
+            max-width: 90%;
+        }
+    }
+}
