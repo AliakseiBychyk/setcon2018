@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return(
       <div>
-        
+        <h1>SETCON 2018 BREST</h1>
       </div>
     )
   }
