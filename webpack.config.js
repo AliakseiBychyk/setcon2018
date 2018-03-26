@@ -18,20 +18,11 @@ module.exports = (env) => {
           use: 'babel-loader'
         },
         {
-          test: /\.json$/,
-          exclude: /(node_modules)/,
-          use: 'json-loader'
-        },
-        {
           test: /\.s?css$/,
           use: 'style-loader!css-loader!autoprefixer-loader!sass-loader'
         }
       ]
     },
     devtool: isProduction ? 'source-map' : 'inline-source-map',
-    devServer: {
-      contentBase: [path.join(__dirname, 'public'), path.join(__dirname, 'assets')],
-      historyApiFallback: true
-    }
   }
 }
