@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon ./server.js --exec babel-node -e js --ignore public/",
     "build:dev": "webpack -wd",
-    "build:prod": "webpack -p --env production"
+    "build:prod": "webpack -p --env production",
+    "heroku-postbuild": "yarn run build:prod"
   },
   "keywords": [
     "setcon2018",
