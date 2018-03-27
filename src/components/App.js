@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Link, Route } from 'react-router-dom'
 import { summary } from '../../assets/summary.json'
 import ParticipationSection from './ParticipationSection'
+import setconLogo from '../img/setcon2016_logo.png'
+import setconBigLogo from '../img/setcon2016_biglogo.png'
 
 class App extends Component {
   state = {
@@ -14,7 +16,7 @@ class App extends Component {
           <div className="main-header__wrapper">
             <div className="main-header__title">
                 <a href="" className="main-header__title__logo-link">
-                    <img src="/img/setcon2016_logo.png" alt="SETCON small logo" />
+                    <img src={setconLogo} alt="SETCON small logo" />
                 </a>
             </div>
             <nav className="menu-list">
@@ -31,9 +33,9 @@ class App extends Component {
 
         <section className="event-section">
           <div className="event-section__content">
-            <img src="img/setcon2016_biglogo.png" alt="SETCON Huge logo" className="event-section__content__logo" />
+            <img src={setconBigLogo} alt="SETCON Huge logo" className="event-section__content__logo" />
             <div className="event-section__content__text">
-                <p>22 Апреля</p>
+                <p>22 Апреля 2018</p>
                 <p>г. Брест, ул. Л-та Рябцева, 124</p>
             </div>
           </div>

@@ -45,16 +45,8 @@ module.exports = (env) => {
           })
         },
         {
-          test: /\.(jpe?g|png|gif|svg)$/,
-          use: [
-            {
-              loader: 'url-loader',
-              options: {
-                limit: 10000,
-                mimetype: 'img/[name].[ext]'
-              }
-            }
-          ]
+          test: /\.(jpe?g|png|gif|svg)$/i,
+          use: 'file-loader?name=/img/[name].[ext]'
         }
       ]
     },
