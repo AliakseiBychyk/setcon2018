@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
 import { Link, Route } from 'react-router-dom'
+import { summary } from '../../assets/summary.json'
+import ParticipationSection from './ParticipationSection'
 
 class App extends Component {
+  state = {
+    summary
+  }
   render() {
     return(
       <div>
@@ -23,6 +28,39 @@ class App extends Component {
             </nav>
           </div>
         </header>
+
+        <section className="event-section">
+          <div className="event-section__content">
+            <img src="img/setcon2016_biglogo.png" alt="SETCON Huge logo" className="event-section__content__logo" />
+            <div className="event-section__content__text">
+                <p>22 Апреля</p>
+                <p>г. Брест, ул. Л-та Рябцева, 124</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="participations-section background-dark-red counter-diagonal--top-dark-red">
+          <div className="participations-section--wrapper col-1">
+            <div className="participations-section__row col-1-2 mob-1">
+              {this.state.summary.slice(0, 2).map(item => 
+                <ParticipationSection 
+                  key={item.id}
+                  {...item}
+                />
+              )}
+            </div>
+            <div className="participations-section__row col-1-2 mob-1">
+            {this.state.summary.slice(2, 4).map(item => 
+              <ParticipationSection 
+                key={item.id}
+                {...item}
+              />
+            )}
+            </div>
+          </div>
+        </section>
+
+
       </div>
     )
   }
