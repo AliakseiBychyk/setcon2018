@@ -5,7 +5,7 @@
       "name": "Aliaksander Stsepaniuk",
       "subject": "Effective CPU",
       "description": "Современный микропроцессор – весьма сложное и высокотехнологичное устройство. Множество учёных и инженеров трудятся над тем, чтобы сделать микропроцессоры настолько эффективными, насколько это возможно: исполнять код максимально быстро, тратить как можно меньше энергии и выполнять программы, написанные ещё в 80-х.\nВнутренняя сложность микропроцессора максимально абстрагирована от прикладного программиста самим процессором и разработчиками компиляторов. Но всё же знание некоторых принципов работы может помочи писать более эффективный код и избежать некоторых трудноуловимых ошибок.\nПредлагаю поговорить немного о том, как устроен микропроцессор и о том, как можно использовать эти знания для того, чтобы заставить его максимально эффективно.",
-      "image": "",
+      "image": "aliaksander_stsepaniuk.jpg",
       "title": "",
       "company": "",
       "stream": ""
@@ -15,7 +15,7 @@
       "name": "Krystsina Kremianeuskaya",
       "subject": "Business Intelligence – работа на стыке IT и бизнеса",
       "description": "Управление компанией и принятие решений на основе большого количества постоянно меняющихся данных – одна из самых актуальных проблем современных руководителей. Я расскажу, как Business Intelligence помогает справиться с этой задачей и извлечь максимум пользы из имеющихся данных компании, а также познакомлю с инструментами Business Intelligence на примере Power BI.",
-      "image": "",
+      "image": "krystsina_kremianeuskaya.gif",
       "title": "",
       "company": "",
       "stream": ""
@@ -45,7 +45,7 @@
       "name": "Uladzimir Kazakevich",
       "subject": "Evaluating Software Architecture - a practical guide",
       "description": "",
-      "image": "",
+      "image": "uladzimir_kazakevich.jpg",
       "title": "",
       "company": "",
       "stream": ""
@@ -55,7 +55,7 @@
       "name": "Siarhei Tuzik",
       "subject": "Enterprise Orchestration",
       "description": "Что-то легкое и адаптированное под девелоперскую среду про архитектурный стиль мышления, разные профессиональные уровни, типы вовлечения и ролей в больших проектах и т.п.",
-      "image": "",
+      "image": "siarhei_tuzik.gif",
       "title": "",
       "company": "",
       "stream": ""
@@ -65,7 +65,7 @@
       "name": "Volha Zaverach",
       "subject": "Брест e-kids: программирование с удовольствием!",
       "description": "Во время доклада будут раскрыты темы:\n- e-kids: бенефит, который нас объединяет;\n- почему все любят SCRATCH;\n- нашествие роботов в Brest e-kids;\n- тренеры e-kids Brest: кто они и как им стать;\n- детский IT мир: соревнования и опыт публичных выступлений;\n- история и перспективы e-kids в Бресте: SCRATCH в production.\n",
-      "image": "",
+      "image": "volha_zaverach.gif",
       "title": "",
       "company": "",
       "stream": ""
@@ -75,7 +75,7 @@
       "name": "Aliaksandr Orgish",
       "subject": "Программисты-кентавры",
       "description": "Искусственный интеллект",
-      "image": "",
+      "image": "aliaksandr_orgish.jpg",
       "title": "",
       "company": "",
       "stream": ""
@@ -95,7 +95,7 @@
       "name": "Yauheni Pakala",
       "subject": ".NET Embedding",
       "description": "О возможности переиспользования существующей кодововой базы на .NET между Windows, Android и iOS в виде нативных библиотек.",
-      "image": "",
+      "image": "yauheni_pakala.gif",
       "title": "",
       "company": "",
       "stream": ""
@@ -125,7 +125,27 @@
       "name": "Dzianis Baranau",
       "subject": "Key-word Driven подход в Автоматизированном Тестировании",
       "description": "Решение, которое позволяет создавать UI автомейшн тесты человеку без специфических технических скилов и НЕ отвлекаться на рутинные таски (апдейт тест кейсов, ран регрессии в бэкграунде, сбор статистики).",
-      "image": "",
+      "image": "dzianis_baranau.gif",
+      "title": "",
+      "company": "",
+      "stream": ""
+    },
+    {
+      "id": 14,
+      "name": "Aleh Toba",
+      "subject": "",
+      "description": "",
+      "image": "aleh_toba.gif",
+      "title": "",
+      "company": "",
+      "stream": ""
+    },
+    {
+      "id": 15,
+      "name": "Ilya Labacheuski",
+      "subject": "GraphQL adventures",
+      "description": "",
+      "image": "ilya_labacheuski.gif",
       "title": "",
       "company": "",
       "stream": ""
