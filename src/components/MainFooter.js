@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import epamLogo from '../img/epam_logo.png'
-import myITLogo from '../img/MyIT_logo_big.png'
+import myITLogo from '../img/MyIT_logo_Big.png'
 import itSharkLogo from '../img/it_shark_logo.png'
 
 
