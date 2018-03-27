@@ -2,6 +2,10 @@
   "name": "setcon2017",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "9.7.1",
+    "yarn": "0.27.5"
+  },
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./server.js --exec babel-node -e js --ignore public/",
