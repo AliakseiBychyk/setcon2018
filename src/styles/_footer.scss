@@ -20,6 +20,8 @@
         .epam_logo {
             height: auto;
             width: 200px;
+            padding: 5px;
+            margin: 15px;
 
             @media #{$media-480} {
                 width: 150px;

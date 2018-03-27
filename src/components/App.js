@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link, Route } from 'react-router-dom'
 import { summary } from '../../assets/summary.json'
 import ParticipationSection from './ParticipationSection'
+import MainFooter from './MainFooter'
 import setconLogo from '../img/setcon2016_logo.png'
 import setconBigLogo from '../img/setcon2016_biglogo.png'
 
@@ -79,6 +80,8 @@ class App extends Component {
           <p className="start-time-section__text">Начало в 11:00</p>
         </section>
 
+
+        <MainFooter />
 
 
       </div>
