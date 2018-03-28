@@ -3,8 +3,13 @@
   width: 100%;
   text-align: center;
 
+
   .logos{
-      padding-top: 2%;
+      padding: 2% 10%;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    
 
       @media #{$media-780} {
           padding-top: 0%;
@@ -16,18 +21,19 @@
   }
 
   .epam_logo {
-      height: auto;
-      width: 200px;
+      height: 80px;
+      width: auto;
       padding: 5px;
       margin: 15px;
+      // display:block;
 
       @media #{$media-480} {
           width: 150px;
       }
   }
   .seavus_logo {
-      height: auto;
-      width: 200px;
+      height: 80px;
+      width: auto;
       padding: 0px;
       margin: 0px;
 

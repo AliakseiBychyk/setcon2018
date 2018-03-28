@@ -7,7 +7,7 @@ import setconLogo from '../img/setcon-18_small_logo.png'
 import setconBigLogo from '../img/setcon-18_big_logo.png'
 import epamLogo from '../img/epam_logo.png'
 import myITLogo from '../img/MyIT_logo_Big.png'
-import itSharkLogo from '../img/it_shark_logo.png'
+import itSharkLogo from '../img/IT_Shark-inversion.png'
 import seavus from '../img/SeavusLogo-Color.png'
 
 class App extends Component {
@@ -21,27 +21,20 @@ class App extends Component {
           <div className="main-header__wrapper">
             <div className="main-header__title">
                 <a href="" className="main-header__title__logo-link">
-                    <img src={setconLogo} alt="SETCON small logo" />
+                    <img src={setconLogo} alt="SETCON small logo" className="main-header__title__logo-img" />
                 </a>
             </div>
             <nav className="menu-list">
-                <ul className="menu-list__items">                  
+                <div className="menu-list__items">                  
                   <Link to='/agenda' className="menu-list__item__link menu-list__item menu-list__item--active">Agenda</Link>                               
                   <Link to='/speakers' className="menu-list__item__link menu-list__item menu-list__item--active">Speakers</Link>
                   <a href="" target="_blank" className="menu-list__item__link menu-list__item menu-list__item--active">Регистрация</a>
-                </ul>
+                </div>
             </nav>
           </div>
         </header>
 
-        <section className="logos-section">
-          <div className="logos">
-            <a href="https://www.epam.com/" target="_blank"><img src={epamLogo} className="epam_logo" /></a>
-            <a href="https://it-shark.pro/" target="_blank"><img src={itSharkLogo} className="epam_logo" /></a>
-            <a href="https://myit.by/" target="_blank"><img src={myITLogo} className="epam_logo" /></a>
-            <a href="https://seavus.com/" target="_blank"><img src={seavus} className="seavus_logo" /></a>
-          </div>
-        </section>
+
 
         <section className="event-section">
           <div className="event-section__content">
@@ -50,6 +43,19 @@ class App extends Component {
                 <p>22 Апреля 2018</p>
                 <p>г. Брест, ул. Л-та Рябцева, 124</p>
             </div>
+          </div>
+        </section>
+
+        <section className="logos-section">
+          <div className="logos">
+            <a href="https://www.epam.com/" target="_blank">
+              <img src={epamLogo} className="epam_logo" />
+            </a>
+            <a href="https://it-shark.pro/" target="_blank">
+              <img src={itSharkLogo} className="epam_logo" />
+            </a>
+            <a href="https://myit.by/" target="_blank"><img src={myITLogo} className="epam_logo" /></a>
+            <a href="https://seavus.com/" target="_blank"><img src={seavus} className="seavus_logo" /></a>
           </div>
         </section>
 
