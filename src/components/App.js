@@ -21,12 +21,10 @@ class App extends Component {
                 </a>
             </div>
             <nav className="menu-list">
-                <ul className="menu-list__items">
-                    <li className="menu-list__item menu-list__item--active">Agenda</li>
-                    <li className="menu-list__item menu-list__item--active">Speakers</li>
-                    <li className="menu-list__item menu-list__item--active">
-                        <a href="" target="_blank" className="menu-list__item__link">Регистрация</a>
-                    </li>
+                <ul className="menu-list__items">                  
+                  <Link to='/agenda' className="menu-list__item__link menu-list__item menu-list__item--active">Agenda</Link>                               
+                  <Link to='/speakers' className="menu-list__item__link menu-list__item menu-list__item--active">Speakers</Link>
+                  <a href="" target="_blank" className="menu-list__item__link menu-list__item menu-list__item--active">Регистрация</a>
                 </ul>
             </nav>
           </div>

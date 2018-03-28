@@ -34,8 +34,9 @@
             font-size: $font-size-small;
             color: $rose;
             cursor: pointer;
-            margin-right: 5px;
+            margin-right: 15px;
             border-bottom: 2px solid $white;
+            text-decoration: none;
 
             &.menu-list__item--active {
                 background: $rose;
