@@ -13,7 +13,7 @@ const MainFooter = () => {
       <div className="main-footer__sloping-block main-diagonal--bottom-white"></div>
       <div className="main-footer__info background-dark-red counter-diagonal--top-dark-red">
         <span>© 2018. SETCON Brest. | Пишите нам</span>
-          <a className="main-footer__info__email" href="mailto:uladzimir_kazakevich@epam.com">uladzimir_kazakevich@epam.com</a>
+          <a className="main-footer__info__email" href="mailto:it.shark.pro@gmail.com">it.shark.pro@gmail.com</a>
       </div>
     </footer>
   )
