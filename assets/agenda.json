@@ -164,6 +164,17 @@
       "title": "",
       "company": "",
       "stream": ""
+    },
+    {
+      "id": 16,
+      "name": "Siarhei Skavarodkin",
+      "name_r": "Сергей Сковородкин",
+      "subject": "Docker for developers",
+      "description": "",
+      "image": "siarhei_skavarodkin.jpg",
+      "title": "",
+      "company": "",
+      "stream": ""
     }
   ]
 }

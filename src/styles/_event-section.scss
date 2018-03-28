@@ -7,7 +7,6 @@
     // background-color: $setcon-dark-grey;
     height: 500px;
     width: 100%;
-    // display: block;
 
     @media #{$media-780} {
         height: 400px;
@@ -16,6 +15,7 @@
     .event-section__content {
         text-align: center;
         padding: 5% 0;
+        width: 100%;
 
 
         .event-section__content__logo {
@@ -27,11 +27,12 @@
         }
 
         .event-section__content__text {
+
             font-size: $font-size-large;
-            padding: 15% 0 0 0;
+            padding: 80px 0 0 0;
 
             @media #{$media-480} {
-                padding: 5% 0 0 0;
+                padding: 60px 0 0 0;
             }
 
             p {
