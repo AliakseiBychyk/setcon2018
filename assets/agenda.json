@@ -3,6 +3,7 @@
     {
       "id": 1,
       "name": "Aliaksander Stsepaniuk",
+      "name_r": "Александр Степанюк",
       "subject": "Effective CPU",
       "description": "Современный микропроцессор – весьма сложное и высокотехнологичное устройство. Множество учёных и инженеров трудятся над тем, чтобы сделать микропроцессоры настолько эффективными, насколько это возможно: исполнять код максимально быстро, тратить как можно меньше энергии и выполнять программы, написанные ещё в 80-х.\nВнутренняя сложность микропроцессора максимально абстрагирована от прикладного программиста самим процессором и разработчиками компиляторов. Но всё же знание некоторых принципов работы может помочи писать более эффективный код и избежать некоторых трудноуловимых ошибок.\nПредлагаю поговорить немного о том, как устроен микропроцессор и о том, как можно использовать эти знания для того, чтобы заставить его максимально эффективно.",
       "image": "aliaksander_stsepaniuk.jpg",
@@ -13,6 +14,7 @@
     {
       "id": 2,
       "name": "Krystsina Kremianeuskaya",
+      "name_r": "Кристина Кременевская",
       "subject": "Business Intelligence – работа на стыке IT и бизнеса",
       "description": "Управление компанией и принятие решений на основе большого количества постоянно меняющихся данных – одна из самых актуальных проблем современных руководителей. Я расскажу, как Business Intelligence помогает справиться с этой задачей и извлечь максимум пользы из имеющихся данных компании, а также познакомлю с инструментами Business Intelligence на примере Power BI.",
       "image": "krystsina_kremianeuskaya.gif",
@@ -23,9 +25,10 @@
     {
       "id": 3,
       "name": "Dzmitry Nichyparuk ",
+      "name_r": "Дмитрий Ничипорук",
       "subject": "Designing reliable software",
       "description": "По-настоящему надежное программное обеспечение всегда скептически настроено и готово к отказам. Другие системы оно держит на расстоянии, так как слишком тесное взаимодействие может быть небезопасным. Оно не доверяет даже себе устанавливая внутренние барьеры для защиты от сбоев.",
-      "image": "",
+      "image": "dzmitry_nichyparuk.gif",
       "title": "",
       "company": "",
       "stream": ""
@@ -33,9 +36,10 @@
     {
       "id": 4,
       "name": "Pavel Yukhnovich",
+      "name_r": "Павел Юхнович",
       "subject": "Growing as a developer",
       "description": "Do you want to upgrade yourself and become a better engineer? Just follow these tips & tricks and the result will be very rapid.",
-      "image": "",
+      "image": "pavel_yukhnovich.gif",
       "title": "",
       "company": "",
       "stream": ""
@@ -43,6 +47,7 @@
     {
       "id": 5,
       "name": "Uladzimir Kazakevich",
+      "name_r": "Владимир Казакевич",
       "subject": "Evaluating Software Architecture - a practical guide",
       "description": "",
       "image": "uladzimir_kazakevich.jpg",
@@ -53,6 +58,7 @@
     {
       "id": 6,
       "name": "Siarhei Tuzik",
+      "name_r": "Сергей Тузик",
       "subject": "Enterprise Orchestration",
       "description": "Что-то легкое и адаптированное под девелоперскую среду про архитектурный стиль мышления, разные профессиональные уровни, типы вовлечения и ролей в больших проектах и т.п.",
       "image": "siarhei_tuzik.gif",
@@ -63,6 +69,7 @@
     {
       "id": 7,
       "name": "Volha Zaverach",
+      "name_r": "Ольга Заверач",
       "subject": "Брест e-kids: программирование с удовольствием!",
       "description": "Во время доклада будут раскрыты темы:\n- e-kids: бенефит, который нас объединяет;\n- почему все любят SCRATCH;\n- нашествие роботов в Brest e-kids;\n- тренеры e-kids Brest: кто они и как им стать;\n- детский IT мир: соревнования и опыт публичных выступлений;\n- история и перспективы e-kids в Бресте: SCRATCH в production.\n",
       "image": "volha_zaverach.gif",
@@ -73,6 +80,7 @@
     {
       "id": 8,
       "name": "Aliaksandr Orgish",
+      "name_r": "Александр Оргиш",
       "subject": "Программисты-кентавры",
       "description": "Искусственный интеллект",
       "image": "aliaksandr_orgish.jpg",
@@ -83,9 +91,10 @@
     {
       "id": 9,
       "name": "Vitali Fokin",
+      "name_r": "Виталий Фокин",
       "subject": "Kubernetes 101",
       "description": "Обзор возможностей Kubernetes, зачем он нужен, кому и когда, а также немного хороших практик по развертыванию и разработке Kubernetes-powered приложений.",
-      "image": "",
+      "image": "vitali_fokin.jpg",
       "title": "",
       "company": "",
       "stream": ""
@@ -93,6 +102,7 @@
     {
       "id": 10,
       "name": "Yauheni Pakala",
+      "name_r": "Евгений Пакало",
       "subject": ".NET Embedding",
       "description": "О возможности переиспользования существующей кодововой базы на .NET между Windows, Android и iOS в виде нативных библиотек.",
       "image": "yauheni_pakala.gif",
@@ -103,9 +113,10 @@
     {
       "id": 11,
       "name": "Yauheni Arkadzyeu",
+      "name_r": "Евгений Аркадьев",
       "subject": "Кто такой Mixed QA инженер?",
       "description": "Доклад освещает отличия Mixed QA инженера от Manual QA и Automation TA, а также преимущества присутствия Mixed QA на проекте.",
-      "image": "",
+      "image": "yauheni_arkadzyeu.gif",
       "title": "",
       "company": "",
       "stream": ""
@@ -113,9 +124,10 @@
     {
       "id": 12,
       "name": "Yauheni Semianiuk",
+      "name_r": "Евгений Семенюк",
       "subject": "Почувствуй разницу в тестировании программного обеспечения",
       "description": "Тестирование - как много понимают под этим словом. При этом, каждый раз вас будут убеждать в том, что вы что-то делаете не так. Так как же всё-таки делать это правильно? Как тестируют разные продуктовые и аутсорсинг компании? В чем плюсы и минусы различных процессов тестирования? Как это работает в EPAM? Ответы на эти и другие вопросы вы узнаете в этом докладе.",
-      "image": "",
+      "image": "yauheni_semianiuk.gif",
       "title": "",
       "company": "",
       "stream": ""
@@ -123,6 +135,7 @@
     {
       "id": 13,
       "name": "Dzianis Baranau",
+      "name_r": "Денис Баранов",
       "subject": "Key-word Driven подход в Автоматизированном Тестировании",
       "description": "Решение, которое позволяет создавать UI автомейшн тесты человеку без специфических технических скилов и НЕ отвлекаться на рутинные таски (апдейт тест кейсов, ран регрессии в бэкграунде, сбор статистики).",
       "image": "dzianis_baranau.gif",
@@ -133,6 +146,7 @@
     {
       "id": 14,
       "name": "Aleh Toba",
+      "name_r": "Олег Тоба",
       "subject": "",
       "description": "",
       "image": "aleh_toba.gif",
@@ -143,6 +157,7 @@
     {
       "id": 15,
       "name": "Ilya Labacheuski",
+      "name_r": "Илья Лобачевский",
       "subject": "GraphQL adventures",
       "description": "",
       "image": "ilya_labacheuski.gif",

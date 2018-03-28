@@ -32,14 +32,16 @@
             list-style: none;
             padding: 5px 20px; //percents didn't work in FF
             font-size: $font-size-small;
-            color: $rose;
+            color: $setcon-coral;
             cursor: pointer;
-            margin-right: 15px;
+            margin-right: 20px;
             border-bottom: 2px solid $white;
             text-decoration: none;
+            text-align: center;
+            width: 130px;
 
             &.menu-list__item--active {
-                background: $rose;
+                background: $setcon-coral;
                 color: $white;
                 border-bottom: none;
                 
@@ -49,7 +51,7 @@
             }
 
             &:hover {
-               border-bottom: 2px solid $rose;
+               border-bottom: 2px solid $setcon-coral;
             }
 
             .menu-list__item__link {

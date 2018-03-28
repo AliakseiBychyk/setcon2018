@@ -3,8 +3,8 @@ import { Link, Route } from 'react-router-dom'
 import { summary } from '../../assets/summary.json'
 import ParticipationSection from './ParticipationSection'
 import MainFooter from './MainFooter'
-import setconLogo from '../img/setcon2016_logo.png'
-import setconBigLogo from '../img/setcon2016_biglogo.png'
+import setconLogo from '../img/setcon-18_small_logo.png'
+import setconBigLogo from '../img/setcon-18_big_logo.png'
 
 class App extends Component {
   state = {
