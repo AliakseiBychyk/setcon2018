@@ -5,6 +5,10 @@ import ParticipationSection from './ParticipationSection'
 import MainFooter from './MainFooter'
 import setconLogo from '../img/setcon-18_small_logo.png'
 import setconBigLogo from '../img/setcon-18_big_logo.png'
+import epamLogo from '../img/epam_logo.png'
+import myITLogo from '../img/MyIT_logo_Big.png'
+import itSharkLogo from '../img/it_shark_logo.png'
+import seavus from '../img/SeavusLogo-Color.png'
 
 class App extends Component {
   state = {
@@ -30,6 +34,15 @@ class App extends Component {
           </div>
         </header>
 
+        <section className="logos-section">
+          <div className="logos">
+            <a href="https://www.epam.com/" target="_blank"><img src={epamLogo} className="epam_logo" /></a>
+            <a href="https://it-shark.pro/" target="_blank"><img src={itSharkLogo} className="epam_logo" /></a>
+            <a href="https://myit.by/" target="_blank"><img src={myITLogo} className="epam_logo" /></a>
+            <a href="https://seavus.com/" target="_blank"><img src={seavus} className="seavus_logo" /></a>
+          </div>
+        </section>
+
         <section className="event-section">
           <div className="event-section__content">
             <img src={setconBigLogo} alt="SETCON Huge logo" className="event-section__content__logo" />
@@ -40,7 +53,7 @@ class App extends Component {
           </div>
         </section>
 
-        <section className="participations-section background-dark-red counter-diagonal--top-dark-red">
+        <section className="participations-section background-dark-red">
           <div className="participations-section--wrapper col-1">
             <div className="participations-section__row col-1-2 mob-1">
               {this.state.summary.slice(0, 2).map(item => 
@@ -74,7 +87,7 @@ class App extends Component {
             <p className="venue-section__description__item">Вход со стороны ул. Л-та Рябцева.</p>
           </div>
         </section>
-        <section className="start-time-section background-dark-red counter-diagonal--top-dark-red">
+        <section className="start-time-section background-dark-red ">
           <p className="start-time-section__text">Начало в 11:00</p>
         </section>
 

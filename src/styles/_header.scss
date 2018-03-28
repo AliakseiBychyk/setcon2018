@@ -61,35 +61,4 @@
             }
         }
     }
-
-    // @media #{$media-780} {
-    //     .main-header__wrapper {
-    //         display: block;
-
-    //         .main-header__title {
-    //             @include flex-row-space-between;
-    //             height: 50px;
-
-    //             .main-header__title__toggle-button {
-    //                 display: inline-block;
-    //             }
-    //         }
-
-    //         .menu-list {
-    //             display: none;
-    //         }
-    //     }
-
-    //     &.menu-list--opened {
-    //         height: 155px;
-
-    //         .menu-list,
-    //         .menu-list__items {
-    //             display: block;
-    //             width: 100%;
-    //             margin: 0;
-    //             padding: 0;
-    //         }
-    //     }
-    // }
 }
