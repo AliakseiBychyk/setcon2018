@@ -30,7 +30,7 @@
         @include flex-row-space-between;
         .menu-list__item {
             list-style: none;
-            padding: 5px 20px; //percents didn't work in FF
+            padding: 10px 20px; //percents didn't work in FF
             font-size: $font-size-small;
             color: $setcon-coral;
             cursor: pointer;
