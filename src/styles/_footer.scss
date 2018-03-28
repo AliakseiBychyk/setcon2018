@@ -27,6 +27,16 @@
                 width: 150px;
             }
         }
+        .seavus_logo {
+            height: auto;
+            width: 200px;
+            padding: 0px;
+            margin: 0px;
+
+            @media #{$media-480} {
+                width: 150px;
+            }
+        }
 
         img{
             vertical-align: middle;
