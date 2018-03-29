@@ -7,14 +7,22 @@ import { agenda } from '../../assets/agenda.json'
 
 class Agenda extends Component {
   state = {
-    agenda
+    agenda,
+    filter: ''
   }
+
   render() {
     return(
       <div>
         <MainHeader currentPage="agenda" />
-        <h1 className="speakers-title">AGENDA</h1>
-        <div className="speakers-container" >
+        <h1 className="agenda-title">AGENDA</h1>
+        <div className="agenda-container" >
+        <div className="agenda-navigation">
+          <button>Земля</button>
+          <button>Весна</button>
+          <button>Осень</button>
+        </div>
+        <div className="stripe-dark-coral"></div>
           {this.state.agenda.map(item => 
             <Heading
               key={item.id}

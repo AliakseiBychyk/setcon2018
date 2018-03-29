@@ -15,7 +15,7 @@
   }
   .speaker_name {
     text-align: center;
-    color: $setcon-dark-grey;
+    color: $setcon-dark-gray;
     font-size: $font-size-medium;
   }
 }
@@ -35,4 +35,5 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  background: url(../img/background_speakers.jpg);
 }

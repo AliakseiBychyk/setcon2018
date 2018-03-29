@@ -14,6 +14,8 @@ class Speakers extends Component {
       <div>
         <MainHeader currentPage="speakers"/>
         <h1 className="speakers-title">OUR SPEAKERS</h1>
+        <div className="stripe-white"></div>
+        <div className="stripe-dark-coral"></div>
         
         <div className="speakers-container" >
           {this.state.agenda.map(item => 

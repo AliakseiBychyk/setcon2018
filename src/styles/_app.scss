@@ -36,6 +36,20 @@ img {
   background: $setcon-dark-coral;
 }
 
+.stripe-gray {
+  height: 20px;
+  background-color: $setcon-dark-gray;
+}
+
+.stripe-dark-coral {
+  height: 20px;
+  background-color: $setcon-dark-coral;
+}
+
+.stripe-white {
+  height: 10px;
+}
+
 @mixin flex-row {
   display: flex;
   flex-direction: row;
