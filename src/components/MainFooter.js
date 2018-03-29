@@ -10,8 +10,8 @@ import seavus from '../img/SeavusLogo-Color.png'
 const MainFooter = () => {
   return (
     <footer className="main-footer">
-      <div className="main-footer__sloping-block main-diagonal--bottom-white"></div>
-      <div className="main-footer__info background-dark-red counter-diagonal--top-dark-red">
+      <div className="main-footer__sloping-block"></div>
+      <div className="main-footer__info background-dark-red">
         <span>© 2018. SETCON Brest. | Пишите нам</span>
           <a className="main-footer__info__email" href="mailto:it.shark.pro@gmail.com">it.shark.pro@gmail.com</a>
       </div>

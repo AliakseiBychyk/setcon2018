@@ -68,7 +68,7 @@ class App extends Component {
           </div>
         </section>
 
-        <section className="participations-section background-dark-red">
+        <section className="participations-section ">
           <div className="participations-section--wrapper col-1">
             <div className="participations-section__row col-1-2 mob-1">
               {this.state.summary.slice(0, 2).map(item => 

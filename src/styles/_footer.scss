@@ -1,5 +1,6 @@
 .main-footer {
-    // .main-footer__image {
+    background-color: $setcon-dark-grey;
+    .main-footer__image {
     //     // background: url(../img/setcon2016_hero.png) center no-repeat;
     //     height: 300px;
     //     width: 100%;
@@ -57,7 +58,7 @@
     //     @media #{$media-780} {
     //         height: 200px;
     //     }
-    // }
+    }
 
     .main-footer__sloping-block {
         position: relative;
