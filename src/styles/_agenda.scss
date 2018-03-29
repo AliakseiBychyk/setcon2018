@@ -1,11 +1,48 @@
-.agenda-title {
-  height: 130px;
-  color: white;
-  background-color: $setcon-coral;
-  font-size: $font-size-xx-large;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+.agenda {
+  position: relative;
+  top: 50px;
+
+  .agenda-title {
+    height: 130px;
+    color: white;
+    background-color: $setcon-coral;
+    font-size: $font-size-xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .agenda-navigation {
+    justify-content: flex-start;
+    padding: 20px;
+    
+    button {
+      margin: 5px;
+    }
+  }
+  .agenda-container {
+    display: flex;
+    flex-wrap: wrap;
+    // width: 80%;
+
+    .agenda-item {
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      justify-content: flex-start;
+
+      .agenda-item-time {
+        width: 100px;
+        text-align: center;
+        position: relative;
+      }
+      .agenda-item-speaker {
+
+      }
+    }
+  }
 }
+
 
