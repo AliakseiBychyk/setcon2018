@@ -1,6 +1,6 @@
 .speaker_item {
-  text-align: left;
-  float: left;
+  text-align: center;
+  float: center;
   padding: 10px;
   position: relative;
   width: 300px;
@@ -14,12 +14,11 @@
     object-fit: cover;
   }
   .speaker_name {
-
+    text-align: center;
+    color: $setcon-dark-grey;
+    font-size: $font-size-medium;
   }
 }
-
-
-
 
 .speakers-title {
   height: 130px;
@@ -34,7 +33,6 @@
 
 .speakers-container {
   display: flex;
-  // justify-content: center;
-  // align-content: center;
-  // margin: auto;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
