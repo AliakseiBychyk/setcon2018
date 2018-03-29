@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Link, Route } from 'react-router-dom'
 import Heading from './Heading'
+import MainHeader from './MainHeader'
+import MainFooter from './MainFooter'
 import { agenda } from '../../assets/agenda.json'
 
 class Agenda extends Component {
@@ -10,13 +12,17 @@ class Agenda extends Component {
   render() {
     return(
       <div>
-        <h1>AGENDA</h1>
-        {this.state.agenda.map(item => 
-          <Heading
-            key={item.id}
-            {...item}
-          ></Heading>
-        )}
+        <MainHeader currentPage="agenda" />
+        <h1 className="speakers-title">AGENDA</h1>
+        <div className="speakers-container" >
+          {this.state.agenda.map(item => 
+            <Heading
+              key={item.id}
+              {...item}
+            ></Heading>
+          )}
+        </div>
+        <MainFooter />
       </div>
     )
   }

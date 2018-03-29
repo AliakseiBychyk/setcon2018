@@ -6,9 +6,9 @@ const Speaker = ({name_r, subject, description, image}) => {
   const speakerImage = image ? require('../img/'+ image) : ''
 
   return (
-    <div>
+    <div className="speaker_item">
       <img src={speakerImage} className="speaker_image"/>
-      <h2>{name_r}</h2>
+      <h2 className="speaker_name">{name_r}</h2>
     </div>
   )
 }
