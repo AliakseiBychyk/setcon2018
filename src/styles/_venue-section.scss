@@ -43,6 +43,10 @@
     .venue-section__description {
         display: inline-block;
         width: 50%;
+        
+        #map {
+            background-color: white;
+        }
 
         @media #{$media-780} {
             display: block;

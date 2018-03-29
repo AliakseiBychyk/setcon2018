@@ -43,6 +43,7 @@ class App extends Component {
             <div className="event-section__content__text">
                 <p>22 Апреля 2018</p>
                 <p>г. Брест, ул. Л-та Рябцева, 124</p>
+                <p>Начало в 11:00</p>
             </div>
           </div>
         </section>
@@ -93,7 +94,12 @@ class App extends Component {
         </section>
         <section className="venue-section background-rose">
           <div className="venue-section__map" >
-            <div className="venue-section__map__action" id="map"></div>
+            <div className="venue-section__map__action" id="map">
+            <iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyBcx0KF_DgTCLWOlMOZI59T8IQ1AXPm-AQ&q=Kafe+"Klub+11:11"&zoom=16&maptype=satellite&center=52.144756,23.680140'
+                width="100%"
+                height="300px"
+                frameBorder="0" />
+            </div>
           </div>
           <div className="venue-section__description">
             <p className="venue-section__description__item">iBC Бизнес-центр - Intelligent Business Center. </p>
@@ -101,11 +107,7 @@ class App extends Component {
             <p className="venue-section__description__item">Вход со стороны ул. Л-та Рябцева.</p>
           </div>
         </section>
-        <section className="start-time-section background-dark-red ">
-          <p className="start-time-section__text">Начало в 11:00</p>
-        </section>
-
-
+    
         <MainFooter />
 
 
