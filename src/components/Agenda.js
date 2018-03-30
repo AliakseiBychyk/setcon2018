@@ -13,9 +13,8 @@ class Agenda extends Component {
 
   setStream = (stream) => {
     this.setState(prevState => {
-      const filter = prevState !== stream ? stream : 'all'
       return {
-        filter 
+        filter : prevState.filter !== stream ? stream : 'all'
       }
     })
   }
