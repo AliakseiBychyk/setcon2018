@@ -20,7 +20,7 @@ class Agenda extends Component {
       all: 'Все потоки',
       1: 'Поток 1: Земля - Θ Тета',
       2: 'Поток 2: Весна',
-      3: 'Поток 3: Зима' 
+      3: 'Поток 3: Осень' 
     }
     return streams[this.state.filter]
   }
