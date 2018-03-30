@@ -5,10 +5,17 @@ import MainHeader from './MainHeader'
 import MainFooter from './MainFooter'
 import { agenda } from '../../assets/agenda.json'
 
+const STREAMS = {
+  ALL: 'all',
+  EARTH: '1',
+  SPRING: '2',
+  AUTUMN: '3'
+};
+
 class Agenda extends Component {
   state = {
     agenda,
-    filter: 'all'
+    filter: STREAMS.ALL
   }
 
   componentDidUpdate() {
@@ -17,10 +24,10 @@ class Agenda extends Component {
 
   currentStream = () => {
     const streams = {
-      all: 'Все потоки',
-      1: 'Поток 1: Земля - Θ Тета',
-      2: 'Поток 2: Весна',
-      3: 'Поток 3: Осень' 
+      [STREAMS.ALL]: 'Все потоки',
+      [STREAMS.EARTH]: 'Поток 1: Земля - Θ Тета',
+      [STREAMS.SPRING]: 'Поток 2: Весна',
+      [STREAMS.AUTUMN]: 'Поток 3: Осень' 
     }
     return streams[this.state.filter]
   }
@@ -33,18 +40,6 @@ class Agenda extends Component {
     })
   }
 
-  setEarthStream = () => {
-    this.setStream('1')
-  }
-
-  setSpringStream = () => {
-    this.setStream('2')
-  }
-
-  setFallStream = () => {
-    this.setStream('3')
-  }
-
   render() {
     return(
       <div className="agenda">
@@ -53,9 +48,9 @@ class Agenda extends Component {
         <div className="agenda-container" >
           <div className="agenda-navigation">
             <strong>Потоки:  </strong>
-            <button onClick={this.setEarthStream}>Земля</button>
-            <button onClick={this.setSpringStream}>Весна</button>
-            <button onClick={this.setFallStream}>Осень</button>
+            <button onClick={() => this.setStream(STREAMS.EARTH)}>Земля</button>
+            <button onClick={() => this.setStream(STREAMS.SPRING)}>Весна</button>
+            <button onClick={() => this.setStream(STREAMS.AUTUMN)}>Осень</button>
             <div className="agenda-navigation_current_stream">
               <div>
                 <strong>{this.currentStream()}</strong>

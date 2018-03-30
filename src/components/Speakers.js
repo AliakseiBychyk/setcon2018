@@ -9,6 +9,7 @@ class Speakers extends Component {
   state = {
     agenda
   }
+  
   render() {
     return(
       <div>
@@ -16,7 +17,17 @@ class Speakers extends Component {
 
         <h1 className="speakers-title">OUR SPEAKERS</h1>      
         <div className="speakers-container" >
-          {this.state.agenda.map(item => 
+          {[...this.state.agenda]            
+            .sort((a, b) => {
+              const nameA = a.name_r.split(' ')[1] || '';
+              const nameB = b.name_r.split(' ')[1] || '';             
+              return nameA < nameB 
+                ? -1 
+                : nameA > nameB 
+                  ? 1 
+                  : 0 
+            })
+            .map(item => 
             item.name !== 'info' && 
             <Speaker
               key={item.id}
