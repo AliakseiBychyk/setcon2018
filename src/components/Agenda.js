@@ -18,6 +18,7 @@ class Agenda extends Component {
         <h1 className="agenda-title">AGENDA</h1>
         <div className="agenda-container" >
           <div className="agenda-navigation">
+            <strong>Потоки:  </strong>
             <button>Земля</button>
             <button>Весна</button>
             <button>Осень</button>

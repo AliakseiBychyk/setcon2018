@@ -1,6 +1,8 @@
 .time-table-section {
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 0 10%;
+  width: 100%;
+  background-color: #e3eed7;
 
   @media #{$media-1280} {
       padding: 0 5%;
@@ -53,6 +55,7 @@
     }
 
     .time-table-section__container_inner {
+      display: block;
       padding: 10px 0 0 15px;
       position: relative;
 
@@ -75,6 +78,7 @@
       }
 
       .time-table-section__event {
+        display: block;
         float: left;
         margin: 0 12px 12px 0;
         position: relative;
@@ -140,9 +144,10 @@
               }
 
               .time-table-section__event__person__bio {
+                display: block;
                 margin-left: 120px;
                 margin-bottom: 20px;
-                
+                              
                 @media #{$media-480} {
                     margin-left: auto;
                 }

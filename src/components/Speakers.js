@@ -17,6 +17,7 @@ class Speakers extends Component {
         <h1 className="speakers-title">OUR SPEAKERS</h1>      
         <div className="speakers-container" >
           {this.state.agenda.map(item => 
+            item.name !== 'info' && 
             <Speaker
               key={item.id}
               {...item}

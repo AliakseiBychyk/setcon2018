@@ -1,14 +1,28 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+import ParticipationSectionItem from './ParticipationSectionItem'
 
-
-const ParticipationSection = ({number, description}) => {
+const ParticipationSection = ({summary}) => {
   return (
-    <div className="participations-section__item">
-      <p className="participations-section__item__number">{number}</p>
-      <p className="participations-section__text">{description}</p>
-    </div>
+    <section className="participations-section ">
+      <div className="participations-section--wrapper col-1">
+        <div className="participations-section__row col-1-2 mob-1">
+          {summary.slice(0, 2).map(item => 
+            <ParticipationSectionItem 
+              key={item.id}
+              {...item}
+            />
+          )}
+        </div>
+        <div className="participations-section__row col-1-2 mob-1">
+        {summary.slice(2, 4).map(item => 
+          <ParticipationSectionItem 
+            key={item.id}
+            {...item}
+          />
+        )}
+        </div>
+      </div>
+    </section>
   )
 }
 
