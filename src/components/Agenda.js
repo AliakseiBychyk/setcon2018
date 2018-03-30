@@ -56,9 +56,12 @@ class Agenda extends Component {
             <button onClick={this.setEarthStream}>Земля</button>
             <button onClick={this.setSpringStream}>Весна</button>
             <button onClick={this.setFallStream}>Осень</button>
-            <strong 
-              className="agenda-navigation_current_stream"
-            >{this.currentStream()}</strong>
+            <div className="agenda-navigation_current_stream">
+              <div>
+                <strong>{this.currentStream()}</strong>
+              </div>
+              <div>В расписании возможны изменения</div>
+            </div>
           </div>
 
 

@@ -1,7 +1,7 @@
 .agenda {
   position: relative;
   top: 50px;
-
+  background: url(../img/bloom-blossom-flora.jpg);
 
   .agenda-title {
     height: 130px;
@@ -19,7 +19,9 @@
     justify-content: flex-start;
     padding: 20px 20%;
     font-size: $font-size-large;
-    color: $setcon-dark-gray;
+    // background-color: #e3eed7;
+    color: white;//$setcon-dark-gray;
+    // background: transparent;
     
     button {
       margin: 5px;
