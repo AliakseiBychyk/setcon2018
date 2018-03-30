@@ -1,6 +1,9 @@
 import React from 'react'
+import mapOptions from '../../assets/mapOptions.json'
 
 const DescriptionSection = () => {
+  const { url, APIkey, place, zoom, maptype, center } = mapOptions
+  
   return (
     <div>
       <section className="conference-description background-white counter-diagonal--top-white main-diagonal--top-white">
@@ -9,7 +12,7 @@ const DescriptionSection = () => {
       <section className="venue-section background-rose">
         <div className="venue-section__map" >
           <div className="venue-section__map__action" id="map">
-          <iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyBcx0KF_DgTCLWOlMOZI59T8IQ1AXPm-AQ&q=Kafe+"Klub+11:11"&zoom=16&maptype=satellite&center=52.144756,23.680140'
+          <iframe src={`${url}?key=${APIkey}&q=${place}&zoom=${zoom}&maptype=${maptype}&center=${center}`}
               width="100%"
               height="300px"
               frameBorder="0" />

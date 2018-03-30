@@ -11,6 +11,12 @@ class Agenda extends Component {
     filter: ''
   }
 
+  clickHandle = () => {
+    this.setState(()=> {
+      filter: '1'
+    })
+  }
+
   render() {
     return(
       <div className="agenda">
@@ -19,7 +25,7 @@ class Agenda extends Component {
         <div className="agenda-container" >
           <div className="agenda-navigation">
             <strong>Потоки:  </strong>
-            <button>Земля</button>
+            <button onClick={this.clickHandle()}>Земля</button>
             <button>Весна</button>
             <button>Осень</button>
           </div>
