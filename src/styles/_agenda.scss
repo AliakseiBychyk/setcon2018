@@ -24,6 +24,11 @@
     button {
       margin: 5px;
     }
+
+    .agenda-navigation_current_stream {
+      font-size: $font-size-xx-large;
+      padding-left: 50px;
+    }
   }
   .agenda-container {
     display: flex;

@@ -11,6 +11,20 @@ class Agenda extends Component {
     filter: 'all'
   }
 
+  componentDidUpdate() {
+
+  }
+
+  currentStream = () => {
+    const streams = {
+      all: 'Все потоки',
+      1: 'Поток 1: Земля - Θ Тета',
+      2: 'Поток 2: Весна',
+      3: 'Поток 3: Зима' 
+    }
+    return streams[this.state.filter]
+  }
+
   setStream = (stream) => {
     this.setState(prevState => {
       return {
@@ -42,6 +56,9 @@ class Agenda extends Component {
             <button onClick={this.setEarthStream}>Земля</button>
             <button onClick={this.setSpringStream}>Весна</button>
             <button onClick={this.setFallStream}>Осень</button>
+            <strong 
+              className="agenda-navigation_current_stream"
+            >{this.currentStream()}</strong>
           </div>
 
 
