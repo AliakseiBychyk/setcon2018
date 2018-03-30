@@ -8,13 +8,28 @@ import { agenda } from '../../assets/agenda.json'
 class Agenda extends Component {
   state = {
     agenda,
-    filter: ''
+    filter: 'all'
   }
 
-  clickHandle = () => {
-    this.setState(()=> {
-      filter: '1'
+  setStream = (stream) => {
+    this.setState(prevState => {
+      const filter = prevState !== stream ? stream : 'all'
+      return {
+        filter 
+      }
     })
+  }
+
+  setEarthStream = () => {
+    this.setStream('1')
+  }
+
+  setSpringStream = () => {
+    this.setStream('2')
+  }
+
+  setFallStream = () => {
+    this.setStream('3')
   }
 
   render() {
@@ -25,21 +40,21 @@ class Agenda extends Component {
         <div className="agenda-container" >
           <div className="agenda-navigation">
             <strong>Потоки:  </strong>
-            <button onClick={this.clickHandle()}>Земля</button>
-            <button>Весна</button>
-            <button>Осень</button>
+            <button onClick={this.setEarthStream}>Земля</button>
+            <button onClick={this.setSpringStream}>Весна</button>
+            <button onClick={this.setFallStream}>Осень</button>
           </div>
 
 
           <div className="agenda-section agenda">
           </div>
 
-
           {this.state.agenda.map(item => 
-            <AgendaItem
-              key={item.id}
-              {...item}
-            ></AgendaItem>
+            (item.stream === this.state.filter || item.stream === 'all') &&
+              <AgendaItem
+                key={item.id}
+                {...item}
+              ></AgendaItem>
           )}
         </div>
         <MainFooter />
