@@ -49,7 +49,7 @@ class Agenda extends Component {
           </div>
 
           {this.state.agenda.map(item => 
-            (item.stream === this.state.filter || item.stream === 'all') &&
+            (item.stream === this.state.filter || this.state.filter === 'all') &&
               <AgendaItem
                 key={item.id}
                 {...item}
