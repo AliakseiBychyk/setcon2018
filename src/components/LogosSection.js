@@ -16,13 +16,13 @@ const LogosSection = () => {
           <img src={itSharkLogo} className="epam_logo" />
         </a>
         <a href="https://myit.by/" target="_blank">
-          <img src={myITLogo} className="epam_logo" />
+          <img src={myITLogo} className="epam_logo myit_logo" />
         </a>
         <a href="https://seavus.com/" target="_blank">
           <img src={seavus} className="seavus_logo" />
         </a>
         <a href="https://smartexlab.com/" target="_blank">
-          <img src={smartexLogo} className="epam_logo" />
+          <img src={smartexLogo} className="epam_logo smartex_logo" />
         </a>
       </div>
     </section>
