@@ -1,8 +1,8 @@
 .time-table-section {
   margin-top: 1rem;
-  padding: 0 10%;
+  padding: 0 20%;
   width: 100%;
-  background-color: #e3eed7;
+  // background-color: #e3eed7;
 
   @media #{$media-1280} {
       padding: 0 5%;
@@ -40,6 +40,7 @@
   }
 
   .time-table-section__container {
+    background-color: #e3eed7;
     border-bottom: 1px solid rgba(0,0,0,.1);
     padding-top: 3px;
     border-left: 1px solid rgba(0,0,0,.10);

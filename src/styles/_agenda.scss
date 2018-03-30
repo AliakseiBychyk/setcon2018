@@ -17,7 +17,7 @@
   .agenda-navigation {
     width: 100%;
     justify-content: flex-start;
-    padding: 20px;
+    padding: 20px 20%;
     font-size: $font-size-large;
     color: $setcon-dark-gray;
     
@@ -27,7 +27,7 @@
 
     .agenda-navigation_current_stream {
       font-size: $font-size-xx-large;
-      padding-left: 50px;
+      padding-left: 100px;
     }
   }
   .agenda-container {
