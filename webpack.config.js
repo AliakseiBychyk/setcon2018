@@ -28,7 +28,7 @@ module.exports = (env) => {
           test: /\.s?css$/,
           use: CSSExtract.extract({
             fallback: 'style-loader',
-            use: [            
+            use: [
               {
                 loader: 'css-loader',
                 options: {
@@ -40,8 +40,8 @@ module.exports = (env) => {
                 options: {
                   sourceMap: true
                 }
-              }   
-            ] 
+              }
+            ]
           })
         },
         {
@@ -50,6 +50,6 @@ module.exports = (env) => {
         }
       ]
     },
-    devtool: isProduction ? false : 'inline-source-map',
+    devtool: isProduction ? false : 'inline-source-map'
   }
 }
