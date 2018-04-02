@@ -38,6 +38,11 @@
   justify-content: center;
   align-items: center;
   margin: auto;
+
+  @media #{$media-780} {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .speakers-container {
