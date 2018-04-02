@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import setconLogo from '../img/setcon-18_small_logo.png'
+import homepageLogo from '../img/home_img.png'
 import classnames from 'classnames';
 
 const MainHeader = ({currentPage}) => {
@@ -14,6 +15,7 @@ const MainHeader = ({currentPage}) => {
             to='/' 
           >
             <img src={setconLogo} alt="SETCON small logo" className="main-header__title__logo-img" />
+            <img src={homepageLogo} alt="homepage logo" className="main-header__title__home-img" />
           </Link>
         </div>
         <nav className="menu-list">

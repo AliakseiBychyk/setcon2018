@@ -25,8 +25,23 @@
                 height: 25px;
                 max-width: fit-content;
                 margin-right: 10px;
+
+                @media #{$media-1280} {
+                    display: none;
+                }
             }
 
+            .main-header__title__home-img {
+                height: 25px;
+                max-width: fit-content;
+                margin-right: 10px;
+                display: none;
+
+                @media #{$media-1280} {
+                    display: inline;
+                }
+            }
+ 
             .main-header__title__toggle-button {
                 display: none;
             }
@@ -41,12 +56,19 @@
             font-size: $font-size-small;
             color: $setcon-coral;
             cursor: pointer;
-            margin-right: 20px;
+            margin-right: 1rem;
             border-bottom: 2px solid $white;
             text-decoration: none;
             text-align: center;
-            width: 130px;
+            width: 12rem;
 
+            @media #{$media-780} {
+                margin-right: 0.5rem;
+                width: 7rem;
+                padding: 0.5rem 1rem;
+            }
+
+          
             &.menu-list__item--active {
                 background: $setcon-coral;
                 color: $white;
