@@ -6,7 +6,7 @@ const DescriptionSection = () => {
   
   return (
     <div>
-      <section className="conference-description background-white counter-diagonal--top-white main-diagonal--top-white">
+      <section className="conference-description ">
         <p className="conference-description__text">Ежегодная профессиональная инженерная конференция, цель которой создать площадку для активного общения и обмена знаниями. Эксперты из разных сфер IT делятся опытом разработки и имплементации программных продуктов и сервисов.</p>
       </section>
       <section className="venue-section background-rose">

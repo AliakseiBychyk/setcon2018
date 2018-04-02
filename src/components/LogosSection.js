@@ -11,14 +11,15 @@ const LogosSection = () => {
     <section className="logos-section">
       <LogoSlider />
       <div className="logos-section__logos">
+        
+        <a href="https://myit.by/" target="_blank">
+          <img src={myITLogo} className="logo" />
+        </a>
         <a href="https://www.epam.com/" target="_blank">
           <img src={epamLogo} className="logo" />
         </a>
         <a href="https://it-shark.pro/" target="_blank">
           <img src={itSharkLogo} className="logo" />
-        </a>
-        <a href="https://myit.by/" target="_blank">
-          <img src={myITLogo} className="logo" />
         </a>
         <a href="https://seavus.com/" target="_blank">
           <img src={seavus} className="logo" />

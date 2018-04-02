@@ -23,13 +23,13 @@ const LogoSlider = () => {
         </a>
       </div>
       <div>
-        <a href="https://it-shark.pro/" target="_blank">
-          <img src={itSharkLogo} className="logo" />
+        <a href="https://myit.by/" target="_blank">
+          <img src={myITLogo} className="logo" />
         </a>
       </div>
       <div>
-        <a href="https://myit.by/" target="_blank">
-          <img src={myITLogo} className="logo" />
+        <a href="https://it-shark.pro/" target="_blank">
+          <img src={itSharkLogo} className="logo" />
         </a>
       </div>
       <div>

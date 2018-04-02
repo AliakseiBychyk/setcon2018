@@ -1,6 +1,8 @@
 .event-section {
-    background: url(../img/background_img.jpg) center no-repeat;
+    // opacity: 0.6;
+    background: url(../img/iStock_000017531225_XXXLarge.jpg) center no-repeat;
     width: 100%;
+    background-size: cover;
 
     .event-section__content {
         text-align: center;
@@ -14,7 +16,6 @@
         }
 
         .event-section__content__text {
-
             font-size: $font-size-xx-large;
             padding: 5vw 0 0 0;
 
@@ -27,7 +28,7 @@
             }
 
             p {
-                background-color: rgba(70, 69, 71, 0.1);
+                background-color: rgba(70, 69, 71, 0.2);
                 color: white;
                 margin: auto;
                 padding: 8px;
