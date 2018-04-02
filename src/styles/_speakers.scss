@@ -13,11 +13,15 @@
     position: relative;
     width: 200px;
     object-fit: cover;
+    border-radius: 100px;
   }
   .speaker_name {
     text-align: center;
     color: $setcon-dark-gray;
     font-size: $font-size-medium;
+  }
+  .speaker_title, .speaker_company {
+    font-size: $font-size-small;
   }
 }
 
@@ -40,6 +44,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: url(../img/beautiful-bloom-blooming.jpg);
+  // background: url(../img/beautiful-bloom-blooming.jpg);
   padding: 20px 0;
 }
