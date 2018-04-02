@@ -15,7 +15,7 @@ class Speakers extends Component {
       <div>
         <MainHeader currentPage="speakers"/>
 
-        <h1 className="speakers-title">OUR SPEAKERS</h1>      
+        <h1 className="speakers-title">НАШИ ДОКЛАДЧИКИ</h1>      
         <div className="speakers-container" >
           {[...this.state.agenda]            
             .sort((a, b) => {

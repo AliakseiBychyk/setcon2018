@@ -17,11 +17,13 @@
   }
   .speaker_name {
     text-align: center;
+    font-weight: bold;
+    padding-bottom: 5px;
     color: $setcon-dark-gray;
     font-size: $font-size-medium;
   }
-  .speaker_title, .speaker_company {
-    font-size: $font-size-small;
+  .speaker_title {
+    font-size: $font-size-normal;
   }
 }
 

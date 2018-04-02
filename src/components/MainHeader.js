@@ -23,13 +23,13 @@ const MainHeader = ({currentPage}) => {
                 className={classnames(['menu-list__item__link', 'menu-list__item'], {
                   'menu-list__item--active': currentPage === 'agenda'
                 })}
-              >Agenda</Link>
+              >Программа</Link>
               <Link 
                 to='/speakers' 
                 className={classnames(['menu-list__item__link', 'menu-list__item'], {
                   'menu-list__item--active': currentPage ==='speakers'
                 })}
-              >Speakers</Link>
+              >Докладчики</Link>
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyF0jVMaFz6PN5gFyiYfmpyh63jcxZvS6DurP_33trdQ1PKw/viewform" 
                 target="_blank" 
                 className="menu-list__item__link menu-list__item"

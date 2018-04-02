@@ -44,7 +44,7 @@ class Agenda extends Component {
     return(
       <div className="agenda">
         <MainHeader currentPage="agenda" />
-        <h1 className="agenda-title">AGENDA</h1>
+        <h1 className="agenda-title">ПРОГРАММА КОНФЕРЕНЦИИ</h1>
         <div className="agenda-container" >
           <div className="agenda-navigation">
             <strong>Потоки:  </strong>
