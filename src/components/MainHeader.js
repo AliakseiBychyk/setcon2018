@@ -17,7 +17,7 @@ const MainHeader = ({currentPage}) => {
           </Link>
         </div>
         <nav className="menu-list">
-            <div className="menu-list__items">                  
+            <div className="menu-list__items">
               <Link 
                 to='/agenda' 
                 className={classnames(['menu-list__item__link', 'menu-list__item'], {

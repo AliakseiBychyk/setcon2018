@@ -1,8 +1,9 @@
-import React, { Component } from 'react'
-import { Link, Route } from 'react-router-dom'
 import AgendaItem from './AgendaItem'
-import MainHeader from './MainHeader'
 import MainFooter from './MainFooter'
+import MainHeader from './MainHeader'
+import React, { Component } from 'react'
+import classnames from 'classnames';
+import { Link, Route } from 'react-router-dom'
 import { agenda } from '../../assets/agenda.json'
 
 const STREAMS = {
@@ -21,9 +22,9 @@ class Agenda extends Component {
   currentStream = () => {
     const streams = {
       [STREAMS.ALL]: 'Все потоки',
-      [STREAMS.EARTH]: 'Поток 1: Земля - Θ Тета',
-      [STREAMS.SPRING]: 'Поток 2: Весна',
-      [STREAMS.AUTUMN]: 'Поток 3: Осень' 
+      [STREAMS.EARTH]: 'Поток: Земля',
+      [STREAMS.SPRING]: 'Поток: Весна',
+      [STREAMS.AUTUMN]: 'Поток: Осень' 
     }
     return streams[this.state.filter]
   }
@@ -37,26 +38,45 @@ class Agenda extends Component {
   }
 
   render() {
+    const { filter } = this.state;
+
     return(
       <div className="agenda">
         <MainHeader currentPage="agenda" />
         <h1 className="agenda-title">ПРОГРАММА КОНФЕРЕНЦИИ</h1>
         <div className="agenda-container" >
           <div className="agenda-navigation">
-            <strong>Потоки:  </strong>
-            <button onClick={() => this.setStream(STREAMS.EARTH)}>Земля</button>
-            <button onClick={() => this.setStream(STREAMS.SPRING)}>Весна</button>
-            <button onClick={() => this.setStream(STREAMS.AUTUMN)}>Осень</button>
-            <div className="agenda-navigation_current_stream">
-              <div>
-                <strong>{this.currentStream()}</strong>
+            <nav className="agenda-streams">
+              <div className="agenda-streams__title">Потоки:</div>
+              <div 
+                className={classnames(['menu-list__item__link', 'menu-list__item'], {
+                  'menu-list__item--active': filter === STREAMS.EARTH
+                })}
+                onClick={() => this.setStream(STREAMS.EARTH)}
+              >
+                Земля
               </div>
-              <div>В расписании возможны изменения</div>
-            </div>
+              <div 
+                onClick={() => this.setStream(STREAMS.SPRING)}
+                className={classnames(['menu-list__item__link', 'menu-list__item'], {
+                  'menu-list__item--active': filter === STREAMS.SPRING
+                })}
+              >
+                Весна
+              </div>
+              <div 
+                onClick={() => this.setStream(STREAMS.AUTUMN)}
+                className={classnames(['menu-list__item__link', 'menu-list__item'], {
+                  'menu-list__item--active': filter === STREAMS.AUTUMN
+                })}
+              >
+                Осень
+              </div>
+            </nav>
           </div>
-
-
-          <div className="agenda-section agenda">
+          <div className="agenda-navigation__current-stream">
+            <div className="current-stream__title">{this.currentStream()}</div>
+            <div>*в расписании возможны изменения</div>
           </div>
 
           {this.state.agenda.map(item => 
