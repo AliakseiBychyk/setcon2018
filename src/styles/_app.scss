@@ -2,6 +2,15 @@
 html {
   width: 100%;
   box-sizing: border-box;
+  font-size: 16px;
+
+  @media #{$media-480} {
+    font-size: 10px;
+  }
+
+  @media #{$media-780} {
+    font-size: 13px;
+  }
 }
 
 body {

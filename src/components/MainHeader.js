@@ -8,9 +8,12 @@ const MainHeader = ({currentPage}) => {
       <header className="main-header background-white main-diagonal--bottom-white" id="mobile-menu">
       <div className="main-header__wrapper">
         <div className="main-header__title">
-            <a href="" className="main-header__title__logo-link">
-                <img src={setconLogo} alt="SETCON small logo" className="main-header__title__logo-img" />
-            </a>
+          <Link 
+            className="main-header__title__logo-link"
+            to='/' 
+          >
+            <img src={setconLogo} alt="SETCON small logo" className="main-header__title__logo-img" />
+          </Link>
         </div>
         <nav className="menu-list">
             <div className="menu-list__items">                  

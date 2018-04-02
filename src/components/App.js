@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-// import { Link, Route } from 'react-router-dom'
+import React, { Component, Fragment } from 'react'
 import { summary } from '../../assets/summary.json'
 import ParticipationSection from './ParticipationSection'
 import MainFooter from './MainFooter'
@@ -16,14 +15,14 @@ class App extends Component {
 
   render() {
     return(
-      <div>       
+      <Fragment>       
         <MainHeader currentPage="home" />
         <EventSection />
         <LogosSection />
         <ParticipationSection summary={this.state.summary} />
         <DescriptionSection />
         <MainFooter />
-      </div>
+      </Fragment>
     )
   }
 }

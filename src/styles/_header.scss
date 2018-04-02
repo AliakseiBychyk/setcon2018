@@ -23,6 +23,8 @@
 
             .main-header__title__logo-img {
                 height: 25px;
+                max-width: fit-content;
+                margin-right: 10px;
             }
 
             .main-header__title__toggle-button {
@@ -66,4 +68,8 @@
             }
         }
     }
+}
+
+.main-header + section {
+    margin-top: 50px;
 }
