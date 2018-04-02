@@ -9,7 +9,7 @@ const Speaker = ({name_r, subject, description, image, company, title}) => {
     <div className="speaker_item">
       <img src={speakerImage} className="speaker_image"/>
       <div className="speaker_name">{name_r}</div>
-      <div className="speaker_title">{`${title} at ${company}`}</div>
+      <div className="speaker_title">{/*`${title} at ${company}`*/}</div>
     </div>
   )
 }
