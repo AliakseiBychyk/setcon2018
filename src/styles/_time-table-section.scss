@@ -41,6 +41,7 @@
 
   .time-table-section__container:hover {
     border-left: 5px solid  #A1233F;
+    margin: -1px 0 0 64px;
     transition: 200ms; 
   }
 
@@ -49,10 +50,6 @@
     border-left: 1px solid rgba(0,0,0,.10);
     margin: -1px 0 0 68px;
     overflow: auto;
-
-    .break {
-      //background-color: $postel-yellow;
-    }
 
     .time-table-section__container_inner {
       display: block;

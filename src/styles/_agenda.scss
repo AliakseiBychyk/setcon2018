@@ -21,16 +21,36 @@
     background-color: #e3eed7;
     // color: white;//$setcon-dark-gray;
     background: transparent;
-    
-    button {
-      margin: 5px;
-    }
 
-    .agenda-navigation_current_stream {
-      font-size: $font-size-xx-large;
-      padding-left: 100px;
+    @media #{$media-1280} {
+      padding: 10px 5%;
     }
   }
+
+  .agenda-navigation__current-stream {
+    padding: 20px 20%;
+
+    @media #{$media-1280} {
+      padding: 10px 5%;
+    }
+  }
+
+  .current-stream__title {
+    font-size: $font-size-x-large;
+    font-weight: 600;
+  }
+
+  .agenda-streams {
+    display: flex;
+  }
+
+  .agenda-streams__title {
+    font-size: $font-size-medium;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+  }
+
   .agenda-container {
     display: flex;
     flex-wrap: wrap;
@@ -48,10 +68,40 @@
         text-align: center;
         position: relative;
       }
-      .agenda-item-speaker {
-
-      }
     }
+  }
+
+  .menu-list__item {
+      list-style: none;
+      padding: 10px 20px; //percents didn't work in FF
+      font-size: $font-size-small;
+      color: $setcon-coral;
+      cursor: pointer;
+      margin-right: 20px;
+      border-bottom: 2px solid $white;
+      text-decoration: none;
+      text-align: center;
+      width: 130px;
+
+      &.menu-list__item--active {
+          background: $setcon-coral;
+          color: $white;
+          border-bottom: none;
+          
+          &:hover {
+              border-bottom: none;
+          }
+      }
+
+      &:hover {
+          border-bottom: 2px solid $setcon-coral;
+      }
+
+      .menu-list__item__link {
+          display: block;
+          text-decoration: none;
+          color: inherit;
+      }
   }
 }
 
