@@ -1,69 +1,49 @@
 .logos-section {
-  height: 200px;
-  width: 100%;
+  height: auto;
+  min-height: 50px;
   text-align: center;
-
+  width: 100%; 
 
   .logos{
-      padding: 2% 10%;
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-    
+    padding: 2% 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 
-      @media #{$media-780} {
-          padding-top: 0%;
-      }
+    @media #{$media-780} {
+      padding-top: 0%;
+    }
 
-      @media #{$media-480} {
-          padding-top: 10%;
-      }
+    @media #{$media-480} {
+      padding-top: 10%;
+    }
   }
 
-  .epam_logo {
-      height: 80px;
-      width: auto;
-      padding: 5px;
-      margin: 15px;
-      // display:block;
-
-      @media #{$media-480} {
-          width: 150px;
-      }
-  }
-  
-  .smartex_logo, .myit_logo {
-    padding: 10px;
+  .logo {
+    height: auto;
+    max-height: 80px;
+    max-width: 17vw;
+    padding: 0px;
+    margin: 0px;
   }
 
-  .seavus_logo {
-      height: 80px;
-      width: auto;
-      padding: 0px;
-      margin: 0px;
-
-      @media #{$media-480} {
-          width: 150px;
-      }
+  .smartex_logo {
+    height: 80px;
   }
 
   img{
       vertical-align: middle;
   }
+}
 
-  .jetbrains_logo {
-      height: auto;
-
-      @media #{$media-780} {
-          width: 200px;
-      }
-
-      @media #{$media-480} {
-          width: 150px;
-      }
-  }
-
+.logos-section__logos {
   @media #{$media-780} {
-      height: 200px;
+    display: none;
   }
+
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5%;
+  width: 100%;
 }
