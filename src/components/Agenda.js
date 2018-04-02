@@ -18,10 +18,6 @@ class Agenda extends Component {
     filter: STREAMS.ALL
   }
 
-  componentDidUpdate() {
-
-  }
-
   currentStream = () => {
     const streams = {
       [STREAMS.ALL]: 'Все потоки',
@@ -35,7 +31,7 @@ class Agenda extends Component {
   setStream = (stream) => {
     this.setState(prevState => {
       return {
-        filter : prevState.filter !== stream ? stream : 'all'
+        filter : prevState.filter !== stream ? stream : STREAMS.ALL
       }
     })
   }
@@ -64,7 +60,7 @@ class Agenda extends Component {
           </div>
 
           {this.state.agenda.map(item => 
-            (item.stream === this.state.filter || this.state.filter === 'all' || item.stream === 'all') &&
+            (item.stream === this.state.filter || this.state.filter === STREAMS.ALL || item.stream === STREAMS.ALL) &&
               <AgendaItem
                 key={item.id}
                 {...item}
