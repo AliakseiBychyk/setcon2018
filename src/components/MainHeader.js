@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import setconLogo from '../img/setcon-18_small_logo.png'
+import classnames from 'classnames';
 
 const MainHeader = ({currentPage}) => {
   return (
@@ -17,24 +18,21 @@ const MainHeader = ({currentPage}) => {
         </div>
         <nav className="menu-list">
             <div className="menu-list__items">                  
-              {currentPage !== 'home' && 
-                <Link 
-                  to='/' 
-                  className="menu-list__item__link menu-list__item menu-list__item--active"
-                >Home</Link>}
-              {currentPage !== 'agenda' && 
-                <Link 
-                  to='/agenda' 
-                  className="menu-list__item__link menu-list__item menu-list__item--active"
-                >Agenda</Link>}                               
-              {currentPage !=='speakers' && 
-                <Link 
-                  to='/speakers' 
-                  className="menu-list__item__link menu-list__item menu-list__item--active"
-                >Speakers</Link>}
+              <Link 
+                to='/agenda' 
+                className={classnames(['menu-list__item__link', 'menu-list__item'], {
+                  'menu-list__item--active': currentPage === 'agenda'
+                })}
+              >Agenda</Link>
+              <Link 
+                to='/speakers' 
+                className={classnames(['menu-list__item__link', 'menu-list__item'], {
+                  'menu-list__item--active': currentPage ==='speakers'
+                })}
+              >Speakers</Link>
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyF0jVMaFz6PN5gFyiYfmpyh63jcxZvS6DurP_33trdQ1PKw/viewform" 
                 target="_blank" 
-                className="menu-list__item__link menu-list__item menu-list__item--active"
+                className="menu-list__item__link menu-list__item"
               >Регистрация</a>
             </div>
         </nav>
