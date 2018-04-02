@@ -50,6 +50,6 @@ module.exports = (env) => {
         }
       ]
     },
-    devtool: isProduction ? 'source-map' : 'inline-source-map',
+    devtool: isProduction ? null : 'inline-source-map',
   }
 }
