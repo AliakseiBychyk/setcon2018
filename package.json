@@ -24,6 +24,7 @@
   "license": "ISC",
   "dependencies": {
     "classnames": "^2.2.5",
+    "nodemon": "^1.17.2",
     "normalize.css": "7.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -50,7 +51,6 @@
     "mime": "^2.2.2",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.7.2",
-    "nodemon": "^1.17.2",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "webpack": "^4.2.0",
