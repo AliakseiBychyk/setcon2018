@@ -1,9 +1,0 @@
-{
-  "url": "https://www.google.com/maps/embed/v1/place",
-  "APIkey": "AIzaSyCJ4tQh30lHq9FgfWLb5tzgLGpt1Z8IaPk",
-  "place": "Kafe+\"Klub+11:11\"",
-  "zoom": "16",
-  "maptype": "satellite",
-  "center": "52.145250,23.681940",
-  "comment": "Google Maps API Key generated for setcon2018 project "
-}
