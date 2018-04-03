@@ -1,6 +1,7 @@
 const webpack = require('webpack')
 const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 
@@ -50,6 +51,13 @@ module.exports = (env) => {
         }
       ]
     },
+    plugins: [
+      new HtmlWebpackPlugin({
+        template: path.join('src/index.html'),
+        filename: 'index.html'
+      }),
+      new ExtractTextPlugin('styles.css')
+    ],
     devtool: isProduction ? false : 'inline-source-map'
   }
 }
