@@ -8,11 +8,11 @@ import 'normalize.css/normalize.css'
 import './styles/main.scss'
 
 render(
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <Switch>
-      <Route exact path="/" component={App} />
-      <Route path="/agenda" component={Agenda} />
-      <Route path="/speakers" component={Speakers} />
+      <Route exact path='/' component={App} />
+      <Route path='/agenda' component={Agenda} />
+      <Route path='/speakers' component={Speakers} />
     </Switch>
   </Router>,
   document.getElementById('root')
