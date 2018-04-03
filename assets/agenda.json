@@ -302,6 +302,19 @@
     {
       "id": 24,
       "name": "info",
+      "name_r": "Сергей Соболь",
+      "subject": "Круглый стол со специальным гостем - адвокатом С.Соболем",
+      "description": "",
+      "description_alt": "",
+      "image": "",
+      "title": "",
+      "company": "",
+      "stream": "all",
+      "time": "16:15"
+    },
+    {
+      "id": 25,
+      "name": "info",
       "name_r": "",
       "subject": "Закрытие конференции и After party в кафе-клубе 11:11",
       "description": "",
@@ -310,7 +323,7 @@
       "title": "",
       "company": "",
       "stream": "all",
-      "time": "16:15"
+      "time": "16:45"
     }
   ]
 }
