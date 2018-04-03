@@ -57,7 +57,11 @@
     .venue-section__description {
         font-size: $font-size-medium;
         vertical-align: top;
-        text-align: center;
+        text-align: left;
+
+        @media #{$media-780} {
+            text-align: center;
+        }
     }
 }
 
