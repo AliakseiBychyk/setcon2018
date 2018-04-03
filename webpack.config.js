@@ -11,7 +11,7 @@ module.exports = (env) => {
     'styles.css'
   )
   const HTMLWebpack = new HtmlWebpackPlugin({
-    template: path.join('src/index.html'),
+    template: path.join('./views/index.ejs'),
     filename: 'index.html'
   })
 
@@ -51,6 +51,10 @@ module.exports = (env) => {
         {
           test: /\.(jpe?g|png|gif|svg)$/i,
           use: 'file-loader?name=/img/[name].[ext]'
+        },
+        {
+          test: /\.ejs$/,
+          use: 'ejs-loader?variable=data'
         }
       ]
     },
@@ -58,6 +62,6 @@ module.exports = (env) => {
       CSSExtract,
       HTMLWebpack
     ],
-    devtool: isProduction ? false : 'inline-source-map'
+    devtool: isProduction ? 'source-map' : 'inline-source-map'
   }
 }
