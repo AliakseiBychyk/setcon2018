@@ -10,9 +10,13 @@ module.exports = (env) => {
   const CSSExtract = new ExtractTextPlugin(
     'styles.css'
   )
+  const ejsIndex = require('ejs-loader!./views/index.ejs')
+  const ejsHeader = require('ejs-loader!./views/header.ejs')
+  const ejsFooter = require('ejs-loader!./views/footer.ejs')
+  const ejsTemplate = ejsIndex({include: ejsHeader}, {include: ejsFooter})
   const HTMLWebpack = new HtmlWebpackPlugin({
-    template: path.join('./views/index.ejs'),
-    filename: 'index.html'
+    template: ejsTemplate,
+    inject: 'body'
   })
 
   return {
@@ -21,6 +25,10 @@ module.exports = (env) => {
       path: path.join(__dirname, '/public'),
       filename: 'bundle.js'
     },
+    plugins: [
+      CSSExtract,
+      HTMLWebpack
+    ],
     module: {
       rules: [
         {
@@ -51,17 +59,9 @@ module.exports = (env) => {
         {
           test: /\.(jpe?g|png|gif|svg)$/i,
           use: 'file-loader?name=/img/[name].[ext]'
-        },
-        {
-          test: /\.ejs$/,
-          use: 'ejs-loader?variable=data'
         }
       ]
     },
-    plugins: [
-      CSSExtract,
-      HTMLWebpack
-    ],
     devtool: isProduction ? 'source-map' : 'inline-source-map'
   }
 }
