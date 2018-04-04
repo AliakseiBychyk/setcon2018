@@ -1,30 +1,25 @@
 const webpack = require('webpack')
 const path = require('path')
+const ejs = require('ejs')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-
-// const ejsIndex = require('ejs-loader!./views/index.ejs')
-// const ejsHeader = require('ejs-loader!./views/header.ejs')
-// const ejsFooter = require('ejs-loader!./views/footer.ejs')
-
-// const ejsTemplate = require('ejs-compiled!./views/index.ejs')
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 
 module.exports = (env) => {
   const isProduction = env === 'production'
+  
   const CSSExtract = new ExtractTextPlugin(
     'styles.css'
   )
 
-  // const ejsTemplate = ejsIndex({include: ejsHeader}, {include: ejsFooter})
   const HTMLWebpack = new HtmlWebpackPlugin({
-    template: require('ejs-compiled!./views/index.ejs'),
-    inject: 'body'
+    template: 'views/index.ejs',
+    chunks: ['landing']
   })
 
   return {
-    entry: ['babel-polyfill', './src/index.js'],
+    entry: ['babel-polyfill', './src/index.js', './views/index.ejs'],
     output: {
       path: path.join(__dirname, '/public'),
       filename: 'bundle.js'
@@ -63,10 +58,14 @@ module.exports = (env) => {
         {
           test: /\.(jpe?g|png|gif|svg)$/i,
           use: 'file-loader?name=/img/[name].[ext]'
+        },
+        {
+          test: /\.ejs$/,
+          use: 'ejs-compiled-loader'
         }
         
       ]
     },
-    devtool: isProduction ? 'source-map' : 'inline-source-map'
+    devtool: isProduction ? false : 'inline-source-map'
   }
 }
