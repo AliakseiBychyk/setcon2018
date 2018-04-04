@@ -14,7 +14,7 @@ const DescriptionSection = () => {
           <div className="venue-section__map__action" id="map">
           <iframe src={`${url}?key=${APIkey}&q=${place}&zoom=${zoom}&maptype=${maptype}&center=${center}`}
               width="100%"
-              height="300px"
+              height="250px"
               frameBorder="0" />
           </div>
         </div>
