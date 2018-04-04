@@ -24,7 +24,7 @@ const LogosSection = () => {
         <a href="https://seavus.com/" target="_blank">
           <img src={seavus} className="logo" />
         </a>
-        <a href="https://smartexlab.com/" target="_blank">
+        <a href="http://smartexlab.com/" target="_blank">
           <img src={smartexLogo} className="logo smartex_logo" />
         </a>
       </div>
