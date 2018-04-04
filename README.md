@@ -4,5 +4,5 @@
 
 # Page for Brest SETCON 2018 conference #
 
-* App currently is under construction
+* Site deployed on [SETCON BREST 2018](http://setcon.brest.tech/)
 * Recent build deployed on [Heroku](https://setcon2018.herokuapp.com/) 
