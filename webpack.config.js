@@ -3,6 +3,12 @@ const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
+// const ejsIndex = require('ejs-loader!./views/index.ejs')
+// const ejsHeader = require('ejs-loader!./views/header.ejs')
+// const ejsFooter = require('ejs-loader!./views/footer.ejs')
+
+// const ejsTemplate = require('ejs-compiled!./views/index.ejs')
+
 process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 
 module.exports = (env) => {
@@ -10,12 +16,10 @@ module.exports = (env) => {
   const CSSExtract = new ExtractTextPlugin(
     'styles.css'
   )
-  const ejsIndex = require('ejs-loader!./views/index.ejs')
-  const ejsHeader = require('ejs-loader!./views/header.ejs')
-  const ejsFooter = require('ejs-loader!./views/footer.ejs')
-  const ejsTemplate = ejsIndex({include: ejsHeader}, {include: ejsFooter})
+
+  // const ejsTemplate = ejsIndex({include: ejsHeader}, {include: ejsFooter})
   const HTMLWebpack = new HtmlWebpackPlugin({
-    template: ejsTemplate,
+    template: require('ejs-compiled!./views/index.ejs'),
     inject: 'body'
   })
 
@@ -60,6 +64,7 @@ module.exports = (env) => {
           test: /\.(jpe?g|png|gif|svg)$/i,
           use: 'file-loader?name=/img/[name].[ext]'
         }
+        
       ]
     },
     devtool: isProduction ? 'source-map' : 'inline-source-map'
