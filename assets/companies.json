@@ -1,0 +1,38 @@
+[
+  {
+    "name": "EPAM",
+    "className": "logo",
+    "url": "https://www.epam.com",
+    "logo": "epam_logo.png"
+  }, 
+  {
+    "name": "MyIT",
+    "className": "logo",
+    "url": "https://myit.by/",
+    "logo": "MyIT_logo_Big.png"
+  },
+  {
+    "name": "IT-Shark",
+    "className": "logo",
+    "url": "https://it-shark.pro/",
+    "logo": "IT_Shark-inversion.png"
+  },
+  {
+    "name": "Seavus",
+    "className": "logo",
+    "url": "https://seavus.com/",
+    "logo": "SeavusLogo-Color.png"
+  },
+  {
+    "name": "SmartexLab",
+    "className": "logo smartex_logo",
+    "url": "https://smartexlab.com/",
+    "logo": "smartex_logo.svg"
+  },
+  {
+    "name": "Dev.by",
+    "className": "logo",
+    "url": "https://dev.by/",
+    "logo": "dev_by.png"
+  }
+]
