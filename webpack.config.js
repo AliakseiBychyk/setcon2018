@@ -16,7 +16,6 @@ module.exports = (env) => {
       filename: 'bundle.js'
     },
     plugins: [
-      CSSExtract
     ],
     module: {
       rules: [
@@ -56,7 +55,7 @@ module.exports = (env) => {
         template: path.join('src/index.html'),
         filename: 'index.html'
       }),
-      new ExtractTextPlugin('styles.css')
+      CSSExtract
     ],
     devtool: isProduction ? false : 'inline-source-map'
   }
