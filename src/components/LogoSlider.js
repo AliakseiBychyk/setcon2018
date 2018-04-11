@@ -31,19 +31,23 @@ class LogoSlider extends Component {
   render() {
     return (
       <Carousel className="logo-slider" {...this.settings}>
-        {companies.map((company, i) =>
-          <Fragment key={company.name}>
+        {companies.map((company, i) => {
+          const second = i !== (companies.length - 1)
+            ? i + 1
+            : 0
+          return (<Fragment key={company.name}>
           
             <CompanyLogo {...company} />
           
             {this.state.isTablet &&
               <Fragment>
                 <span style={{ margin: '10vh' }} />
-                <CompanyLogo {...companies[i+1]} />
+                <CompanyLogo {...companies[second]} />
               </Fragment>
             }
             
-          </Fragment>
+          </Fragment>)
+        }
         )}
       </Carousel>
     )
