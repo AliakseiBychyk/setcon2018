@@ -8,6 +8,10 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 module.exports = (env) => {
   const isProduction = env === 'production'
   const CSSExtract = new ExtractTextPlugin('styles.css')
+  const HTMLWebpackPlugin = new HtmlWebpackPlugin({
+    template: path.join('src/index.html'),
+    filename: 'index.html'
+  })
 
   return {
     entry: ['babel-polyfill', './src/index.js'],
@@ -16,6 +20,8 @@ module.exports = (env) => {
       filename: 'bundle.js'
     },
     plugins: [
+      CSSExtract,
+      HTMLWebpackPlugin
     ],
     module: {
       rules: [
@@ -50,13 +56,6 @@ module.exports = (env) => {
         }
       ]
     },
-    plugins: [
-      new HtmlWebpackPlugin({
-        template: path.join('src/index.html'),
-        filename: 'index.html'
-      }),
-      CSSExtract
-    ],
     devtool: isProduction ? false : 'inline-source-map'
   }
 }
