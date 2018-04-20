@@ -5,11 +5,6 @@ import CompanyLogo from './CompanyLogo'
 import companies from '../../assets/companies.json'
 
 class LogoSlider extends Component {
-  state = {
-    isMobile: this.props.isMobile(),
-    isTablet: this.props.isTablet()
-  }
-
   static getDerivedStateFromProps(nextProps, prevState) {
     if (nextProps.isMobile() !== prevState.isMobile || nextProps.isTablet() !== prevState.isTablet) {
       return {
@@ -17,6 +12,11 @@ class LogoSlider extends Component {
         isTablet: nextProps.isTablet()
       }
     }  
+  }
+
+  state = {
+    isMobile: this.props.isMobile(),
+    isTablet: this.props.isTablet()
   }
 
   settings = {
